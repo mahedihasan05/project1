@@ -16,8 +16,6 @@ body {
     width: 100%;
     height: 105px;
     border-bottom: 1px solid #000000;
-    /* display: grid;
-    grid-template-columns: 1fr 3fr 1fr; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -191,9 +189,11 @@ body {
     background-color: #FDE24F ;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 
     & h2{
         margin-bottom: -100px;
@@ -467,26 +467,167 @@ body {
 /* responsive css  */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .logo{
+       margin: 0; 
+    }
     .navbar{
         display: none;
     }
-    .header_button{
-        visibility: hidden;
-        
-         
+    .login_button,
+    .get_started_button{
+        display: none;
     }
 
-    .hero , .hero_image, .form_div_button, .form_div, form{
+    .hero{
         max-width: 100%;
 
-        & form select option{
-            display:inline-block;
-            width: calc(100% / 12* 12);
+    }
+    .hero_image{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .form_div_button{
+        width: 95% !important;
+        height: 80% !important;
+    }
+    .form_div_button h2{
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+    .form_div{
+        width: 95%;
+        margin: 0 auto !important;
+    }
+    select{
+        font-size: 1rem !important;
+        padding: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem !important;
+       
+    }
+    .how_much_offer{
+        width: 95% !important;
+        margin: 0 auto !important;
+    }
+    .how_much{
+        font-size: 1.1rem !important;
+        width: 11rem !important;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 !important;
+    }
+    .find_offer{
+        font-size: 1.1rem !important;
+    }
+    .hero_button{
+        display: none;
+    }
+    .company{
+        width: 100%;
+        margin: 0 !important;
+        padding: 1rem !important;
+        height: 300px;
 
+    }
+    .company h2{
+        font-size: 2rem;
+        text-align: center !important;
+    }
+    .company img{
+        width: 100%;
+    }
+    .features{
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        grid-template-columns: repeat(1, minmax(0,1fr)) !important;
+        height: fit-content !important;
+    }
+    .rule1, .rule2{
+        display: none;
+    }
+    .first, .second, .third{
+        height: fit-content !important;
+        margin-bottom: 4rem;
+    }
+    .feature_button{
+        margin-top:-3rem !important;
+    }
+    .buy_sell_section{
+        grid-template-columns: repeat(1, 1fr) !important;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90% !important;
 
+    }
+    .sell{
+        margin-top: -4rem;
 
-            
+    }
+    .buy, .sell{
+        width: 90% !important;
+        border: none !important;
+        padding: 1rem !important;
+        height: 80vh !important;
+        
+
+        & h3{
+            font-size: 3rem !important;
+            margin: 0 auto !important;
         }
     }
-}
+
+    .div_123{
+        width: 90% !important;
+       
+
+    }
+    .div_1, .div_2, .div_3{
+        width: 90% !important;
+        margin: 1rem 2rem !important;
+
+        & p{
+            padding: 0;
+        }
+    }
+    .buy_button{
+        width: 12rem;
+        font-size: 0.9rem;
+        margin: 0 auto;
+    }
+    .signup{
+        padding: 0;
+    }
+    .signup_content{
+        width: 100%;
+        gap: 11rem;
+    }
+    .heading_div h3{
+        font-size: 2.2rem;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer_main_div{
+        grid-template-columns: repeat(1, 1fr) !important;
+        height: auto;
+    }
+    .copyright{
+        display: none;
+    }
+ }
+
+
