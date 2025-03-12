@@ -213,12 +213,12 @@ body {
         color: #000000;
         padding: 3rem;
         font-weight: 500;
-        /* margin: 40px; */
+        margin: 40px;
     }
     .rule1{
         position: absolute;
-        top:15rem;
-        left: 40rem;
+        top:17.5rem;
+        left: 32rem;
        z-index: -11;
        width: 6rem;
        border: 1px solid #000000;
@@ -226,8 +226,8 @@ body {
     }
     .rule2{
         position: absolute;
-        top:15rem;
-        left: 70rem;
+        top:17.5rem;
+        left: 57rem;
        z-index: -11;
        width: 6rem;
        border: 1px solid #000000;
